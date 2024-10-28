@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Mídia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><a href="index.html">← Voltar</a></header>
+  <h2>Galeria de Mídia da NASA</h2>
+
+  <section id="search-section">
+    <input type="text" id="search-input" placeholder="Digite o termo de pesquisa...">
+    <select id="media-type-filter">
+      <option value="">Todos os tipos</option>
+      <option value="image">Imagem</option>
+      <option value="video">Vídeo</option>
+      <option value="audio">Áudio</option>
+    </select>
+    <button onclick="pesquisarMidia()">Pesquisar</button>
+  </section>
+  
+  <section id="media-gallery">
+    <div id="media-results">Use a barra de pesquisa para encontrar mídia da NASA.</div>
+    <button id="show-more-button" onclick="mostrarMaisMidia()" style="display: none;">Mostrar Mais</button>
+  </section>
+
+
+  <script src="galeria.js"></script>
+</body>
+</html>
