@@ -14,5 +14,3 @@ fetch(`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${NASA_API_KEY}`)
     `).join('');
   })
   .catch(error => console.error('Erro ao carregar NEOs:', error));
-
-

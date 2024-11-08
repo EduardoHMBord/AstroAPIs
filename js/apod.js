@@ -1,5 +1,3 @@
-// apod.js
-
 const NASA_API_KEY = 'AiLWgufhIp0226s0IrUtEkQxhyVKUMdUkhGkRWec'
 const apodContainer = document.getElementById('apod-container');
 

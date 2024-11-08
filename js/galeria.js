@@ -1,7 +1,6 @@
 let currentIndex = 0;
 let mediaItems = [];
 
-// Função de pesquisa para buscar mídias da NASA
 function pesquisarMidia() {
   const termoPesquisa = document.getElementById("search-input").value;
   const mediaType = document.getElementById("media-type-filter").value;
@@ -85,6 +84,6 @@ function mostrarMaisMidia() {
   currentIndex += 10;
   
   const showMoreButton = document.getElementById("show-more-button");
-  showMoreButton.style.display = currentIndex < mediaItems.length ? "block" : "none";
+  showMoreButton.style.display = currentIndex < mediaItems.length ? "block": "none";
 }
  
