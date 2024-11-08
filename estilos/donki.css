@@ -23,17 +23,11 @@ header a {
   font-size: 1.2rem;
 }
 
-h1{
-  color: #7e57c2;
+h1, h2 {
   text-align: center;
   margin: 20px 0;
-}
-
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
 }
 
 nav ul {
@@ -78,82 +72,75 @@ nav ul li a:hover {
   color: #0e0e24;
 }
 
-.titulo{
+button {
+  padding: 8px 16px;
+  background-color: #7e57c2;
   color: #ffffff;
-  text-shadow: 1px 1px 3px #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-#apod-container{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+button:hover {
+  background-color: #5a2e87;
+}
+
+#show-more-button{
+  margin: 20px auto;
+  display: block;
+}
+
+#donki-section {
+  background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/coronalmassejection_768_60.jpg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
   padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-#apod-container h3{
-  font-size: 0.7rem;
-}
-
-#apod-container p{
-  font-size: 0.5rem;
-}
-
-#apod-container img{
-  border-radius: 3px;
-}
-
-#neo-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  gap: 20px;
-  justify-content: center;
-}
-
-.neo-item {
-  background-color: rgba(63, 43, 91, 0.7);
-  color: #ffffff;
-  width: 300px;
-  border: 1px solid #7e57c2;
-  border-radius: 8px;
+.donki-event {
+  background-color: #161640;
+  font-size: 0.6rem;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
-  align-content: center;
 }
 
-.neo-item h3 {
+.donki-event h3 {
   color: #ffcb57;
 }
 
-#index-background {
-  background-image: url('https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-4.0.3');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 60px;
-  text-align: center;
-  min-height: 600px;
+.donki-event p {
+  color: #cccccc;
+  font-size: 0.5rem;
 }
 
-#index-background p {
-  color: #ffffff;
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 3px #000;
-  margin-bottom: 50px;
-}
-
-#index-background h1{
-  color: #ffffff;
-  text-shadow: 1px 1px 3px #000;
-}
-
-#indexnav ul li{
+#date-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
+#date-filter label {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+#date-filter select, input {
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
 button {
-  padding: 8px 16px;
+  padding: 6px 16px;
   background-color: #7e57c2;
   color: #ffffff;
   font-weight: bold;
@@ -182,4 +169,3 @@ footer {
 footer p {
   margin: 0;
 }
-
