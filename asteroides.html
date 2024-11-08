@@ -2,14 +2,32 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Asteroides e NEOs</title>
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroAPIs - NEOs</title>
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-  <header><a href="index.html">← Voltar</a></header>
-  <h2>Objetos Próximos da Terra (NEO)</h2>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="home-link">AstroAPIs</a>
+      <nav>
+        <ul>
+          <li><a href="apod.html">APOD</a></li>
+          <li><a href="asteroides.html">NEO</a></li>
+          <li><a href="marte.html">Marte</a></li>
+          <li><a href="donki.html">DONKI</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1 class="titulo">Objetos Próximos da Terra (NEO)</h1>
   <section id="neo-container"></section>
 
-  <script src="neo.js"></script>
+  <footer style="margin-top: 20px;">
+  <p>Dados fornecidos pelas APIs da NASA. Este site não é afiliado à NASA.</p>
+  </footer>
+  <script src="js/neo.js"></script>
 </body>
 </html>

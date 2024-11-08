@@ -2,14 +2,32 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Imagem do Dia (APOD)</title>
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroAPIs - Imagem do Dia (APOD)</title>
+  <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-  <header><a href="index.html">← Voltar</a></header>
-  <h2>Imagem Astronômica do Dia</h2>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="home-link">AstroAPIs</a>
+      <nav>
+        <ul>
+          <li><a href="apod.html">APOD</a></li>
+          <li><a href="asteroides.html">NEO</a></li>
+          <li><a href="marte.html">Marte</a></li>
+          <li><a href="donki.html">DONKI</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h1 class="titulo">Imagem Astronômica do Dia (APOD)</h1>
   <section id="apod-container"></section>
 
-  <script src="apod.js"></script>
+  <footer>
+  <p>Dados fornecidos pelas APIs da NASA. Este site não é afiliado à NASA.</p>
+  </footer>
+  <script src="js/apod.js"></script>
 </body>
 </html>

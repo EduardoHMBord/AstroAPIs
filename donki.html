@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstroAPIs - DONKI</title>
+  <link rel="stylesheet" href="estilos/donki.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html" class="home-link">AstroAPIs</a>
+      <nav>
+        <ul>
+          <li><a href="apod.html">APOD</a></li>
+          <li><a href="asteroides.html">NEO</a></li>
+          <li><a href="marte.html">Marte</a></li>
+          <li><a href="donki.html">DONKI</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="donki-section">
+    <h1>Eventos Espaciais (DONKI)</h1>
+    <div id="date-filter">
+      <label for="event-type">Tipo de Evento:</label>
+      <select id="event-type">
+        <option value="CME">Ejeção de Massa Coronal (CME)</option>
+        <option value="FLR">Erupções Solares (Flares)</option>
+        <option value="IPS">Choques Interplanetários (IPS)</option>
+      </select>
+      
+      <label for="start-date">Data de Início:</label>
+      <input type="date" id="start-date">
+    
+      <label for="end-date">Data de Fim:</label>
+      <input type="date" id="end-date">
+    
+      <button onclick="carregarEventosDONKI()">Filtrar</button>
+    </div>
+
+    <div id="donki-events-container"></div>
+    <button id="show-more-button" onclick="mostrarMaisEventos()" style="display: none;">Mostrar Mais</button>
+  </section>
+
+  <footer>
+  <p>Dados fornecidos pelas APIs da NASA. Este site não é afiliado à NASA.</p>
+  </footer>
+  <script src="js/donki.js"></script>
+</body>
+</html>
