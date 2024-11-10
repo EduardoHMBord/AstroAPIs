@@ -4,7 +4,7 @@ const apodContainer = document.getElementById('apod-container');
 fetch(`https://api.nasa.gov/planetary/apod?api_key=${NASA_API_KEY}`)
   .then(response => response.json())
   .then(data => {
-    apodContainer.innerHTML = `
+    apodContainer.innerHTML += `
       <h3>${data.title}</h3>
       <img src="${data.url}" alt="${data.title}">
       <p>${data.explanation}</p>

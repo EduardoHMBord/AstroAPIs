@@ -7,7 +7,6 @@ function carregarFotosDeMarte() {
     .then(response => response.json())
     .then(data => {
       fotosDeMarte = data.photos;
-      indiceAtual = 0;
       document.getElementById('mars-photo-container').innerHTML = '';
       mostrarMaisFotosDeMarte();
     })
@@ -44,7 +43,8 @@ function carregarClimaDeMarte() {
     .then(response => response.json())
     .then(data => {
       const weatherContainer = document.getElementById('mars-weather-container');
-      const sol = Object.keys(data).find(key => key !== 'sol_keys' && key !== 'validity_checks');
+      const solKeys = data.sol_keys;
+      const sol = solKeys[solKeys.length - 1];
       const clima = data[sol];
 
       weatherContainer.innerHTML = `
@@ -52,8 +52,8 @@ function carregarClimaDeMarte() {
           <h3>Sol: ${sol}</h3>
           <p>Temperatura Máxima: ${clima.AT?.mx || 'N/A'} °C<br>
           Temperatura Mínima: ${clima.AT?.mn || 'N/A'} °C<br>
-          Pressão: ${clima.PRE?.av || 'N/A'} Pa'<br>
-          Velocidade do Vento: ${clima.HWS?.av || 'N/A'} m/s</p>
+          Velocidade do Vento: ${clima.HWS?.av || 'N/A'} m/s<br>
+          Pressão: ${clima.PRE?.av || 'N/A'} Pa'</p>
         </div>
       `;
     })

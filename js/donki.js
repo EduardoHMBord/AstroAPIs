@@ -7,17 +7,22 @@ function validarDatas(startDate, endDate) {
   const inicio = new Date(startDate);
   const fim = new Date(endDate);
   
+  if (!startDate || !endDate) {
+    alert("Por favor, selecione ambas as datas.");
+    return false;
+  }
   if (inicio > fim) {
     alert("A data de início não pode ser posterior à data de fim.");
     return false;
   }
+  
   return true;
 }
 
 function carregarEventosDONKI() {
   const eventType = document.getElementById('event-type').value;
-  const startDate = document.getElementById('start-date').value || '2023-01-01';
-  const endDate = document.getElementById('end-date').value || '2023-12-31';
+  const startDate = document.getElementById('start-date').value;
+  const endDate = document.getElementById('end-date').value;
 
   if (!validarDatas(startDate, endDate)) {
     return;
