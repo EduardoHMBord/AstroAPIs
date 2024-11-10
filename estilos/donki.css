@@ -30,6 +30,10 @@ h1, h2 {
   text-shadow: 1px 1px 3px #000;
 }
 
+p{
+  text-shadow: 1px 1px 3px #000;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -46,7 +50,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: rgba(63, 43, 91, 0.8);
   border-radius: 5px;
   border: 2px solid #7e57c2;
@@ -93,20 +97,20 @@ button:hover {
 }
 
 #donki-section {
-  background-image: url('https://assets.science.nasa.gov/dynamicimage/assets/science/esd/climate/2023/12/coronalmassejection_768_60.jpg?w=4096&format=jpeg&fit=clip&crop=faces%2Cfocalpoint');
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUewBTZAjS8-A50QGe01Nwd0LZ8EOefvnCBXAnQTGrczsMWgh19cWt1QV&s=10');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
 }
 
 .donki-event {
-  background-color: #161640;
   font-size: 0.6rem;
+  background-color: rgba(22, 22, 64, 0.9);
   padding: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   text-align: center;
 }
@@ -122,10 +126,12 @@ button:hover {
 
 #date-filter {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 6px;
 }
 
 #date-filter label {
@@ -156,14 +162,15 @@ button:hover {
 
 footer {
   background-color: rgba(22, 22, 64, 0.9);
-  color: #9b59b6;
+  color: #7e57c2;
   text-align: center;
+  font-weight: bold;
   padding: 15px;
   font-size: 0.9rem;
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #9b59b6;
+  border-top: 1px solid #7e57c2;
 }
 
 footer p {

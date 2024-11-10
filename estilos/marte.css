@@ -13,8 +13,37 @@ body {
 
 header {
   background-color: rgba(22, 22, 64, 0.9);
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: rgba(63, 43, 91, 0.8);
+  border-radius: 5px;
+  border: 2px solid #7e57c2;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .header-content {
@@ -29,44 +58,11 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.home-link:hover {
-  background-color: #7e57c2;
-  color: #ffffff;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  background-color: rgba(63, 43, 91, 0.8);
-  border-radius: 8px;
-  border: 2px solid #7e57c2;
-  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
   background-color: #7e57c2;
   color: #0e0e24;
-  transform: scale(1.05);
 }
 
 h1, h2 {
@@ -76,12 +72,17 @@ h1, h2 {
   text-shadow: 1px 1px 3px #000;
 }
 
+#h2clima{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 #mars-background {
   background-image: url('https://www.teslarati.com/wp-content/uploads/2020/01/mars-landing.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -98,6 +99,14 @@ button {
 
 button:hover {
   background-color: #5a2e87;
+}
+
+#mars-weather-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .mars-weather h3 {
@@ -119,7 +128,7 @@ button:hover {
 
 .mars-photo {
   width: 300px;
-  background-color: rgba(22, 22, 64, 0.8);
+  background-color: rgba(22, 22, 64, 0.9);
   padding: 10px;
   border-radius: 7px;
   text-align: center;
@@ -134,14 +143,15 @@ button:hover {
 
 footer {
   background-color: rgba(22, 22, 64, 0.9);
-  color: #9b59b6;
+  color: #7e57c2;
   text-align: center;
+  font-weight: bold;
   padding: 15px;
   font-size: 0.9rem;
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #9b59b6;
+  border-top: 1px solid #7e57c2;
 }
 
 footer p {

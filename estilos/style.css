@@ -29,13 +29,6 @@ h1{
   margin: 20px 0;
 }
 
-main {
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
 nav ul {
   list-style: none;
   display: flex;
@@ -52,7 +45,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: rgba(63, 43, 91, 0.8);
   border-radius: 5px;
   border: 2px solid #7e57c2;
@@ -81,6 +74,7 @@ nav ul li a:hover {
 .titulo{
   color: #ffffff;
   text-shadow: 1px 1px 3px #000;
+  font-size: 0.6rem;
 }
 
 #apod-container{
@@ -88,6 +82,7 @@ nav ul li a:hover {
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  border-radius: 5px;
 }
 
 #apod-container h3{
@@ -169,14 +164,15 @@ button:hover {
 
 footer {
   background-color: rgba(22, 22, 64, 0.9);
-  color: #9b59b6;
+  color: #7e57c2;
   text-align: center;
+  font-weight: bold;
   padding: 15px;
   font-size: 0.9rem;
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid #9b59b6;
+  border-top: 1px solid #7e57c2;
 }
 
 footer p {
