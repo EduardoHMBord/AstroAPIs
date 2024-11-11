@@ -15,12 +15,14 @@ header {
   background-color: rgba(22, 22, 64, 0.9);
   padding: 10px;
   text-align: center;
+  border-bottom: 1px solid #7e57c2;
 }
 
 header a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
+  
 }
 
 h1, h2 {
@@ -125,18 +127,17 @@ button:hover {
 }
 
 #date-filter {
-  display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  padding: 15px;
   border-radius: 6px;
 }
 
 #date-filter label {
-  color: #cccccc;
+  color: #fffff;
   font-weight: bold;
+  text-shadow: 1px 1px 3px #000;
 }
 
 #date-filter select, input {
@@ -175,4 +176,11 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  #date-filter {
+    display: flex;
+    flex-direction: column;
+  }
 }

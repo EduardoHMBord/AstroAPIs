@@ -15,6 +15,7 @@ header {
   background-color: rgba(22, 22, 64, 0.9);
   padding: 10px;
   text-align: center;
+  border-bottom: 1px solid #7e57c2;
 }
 
 header a {
@@ -145,6 +146,10 @@ nav ul li a:hover {
 
 #indexnav ul li{
   margin-bottom: 20px;
+}
+
+#indexnav ul li a{
+  padding: 10px 20px;
 }
 
 button {
