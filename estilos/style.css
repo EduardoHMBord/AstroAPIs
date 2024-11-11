@@ -107,7 +107,7 @@ nav ul li a:hover {
 }
 
 .neo-item {
-  background-color: rgba(63, 43, 91, 0.7);
+  background-color: rgba(63, 43, 91, 0.8);
   color: #ffffff;
   width: 300px;
   border: 1px solid #7e57c2;
@@ -130,6 +130,14 @@ nav ul li a:hover {
   padding: 60px;
   text-align: center;
   min-height: 600px;
+}
+
+#neo-section{
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/375/518/332/space-space-art-asteroids-asteroid-wallpaper-preview.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
 }
 
 #index-background p {
