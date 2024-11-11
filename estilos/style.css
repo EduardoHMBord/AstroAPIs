@@ -96,6 +96,8 @@ nav ul li a:hover {
 
 #apod-container img{
   border-radius: 3px;
+  max-width: 100%;
+  height: auto;
 }
 
 #neo-container {
@@ -111,7 +113,6 @@ nav ul li a:hover {
   color: #ffffff;
   width: 300px;
   border: 1px solid #7e57c2;
-  border-radius: 8px;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
@@ -144,7 +145,8 @@ nav ul li a:hover {
   color: #ffffff;
   font-size: 1.1rem;
   text-shadow: 1px 1px 3px #000;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 #index-background h1{
@@ -157,7 +159,9 @@ nav ul li a:hover {
 }
 
 #indexnav ul li a{
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 8px 10px;
+  width: 200px
 }
 
 button {
