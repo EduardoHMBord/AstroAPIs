@@ -94,10 +94,11 @@ button:hover {
 }
 
 #search-body{
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYRif5-jX-MMfBzz9Y5oLlIOeCR2OTX0HoTA&usqp=CAU');
+  background-image: url('https://wallpaperaccess.com/full/640842.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 840px;
   margin: 0;
   padding: 20px;
 }

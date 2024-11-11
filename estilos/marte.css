@@ -83,7 +83,8 @@ h1, h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 40px 20px;
+  min-height: 840px;
+  padding: 20px 20px;
   text-align: center;
 }
 

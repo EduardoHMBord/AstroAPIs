@@ -99,17 +99,17 @@ button:hover {
 }
 
 #donki-section {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXUewBTZAjS8-A50QGe01Nwd0LZ8EOefvnCBXAnQTGrczsMWgh19cWt1QV&s=10');
+  background-image: url('https://i.ytimg.com/vi/sRLeoEKWspc/maxresdefault.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  min-height: 840px;
   margin: 0;
   padding: 20px;
   text-align: center;
 }
 
 .donki-event {
-  font-size: 0.6rem;
   background-color: rgba(22, 22, 64, 0.9);
   padding: 10px;
   margin-bottom: 10px;
@@ -123,7 +123,6 @@ button:hover {
 
 .donki-event p {
   color: #cccccc;
-  font-size: 0.5rem;
 }
 
 #date-filter {
@@ -135,7 +134,7 @@ button:hover {
 }
 
 #date-filter label {
-  color: #fffff;
+  color: #ffffff;
   font-weight: bold;
   text-shadow: 1px 1px 3px #000;
 }
