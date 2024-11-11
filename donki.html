@@ -14,17 +14,17 @@
       <nav>
         <ul>
           <li><a href="apod.html">APOD</a></li>
-          <li><a href="asteroides.html">NEO</a></li>
-          <li><a href="marte.html">Marte</a></li>
           <li><a href="donki.html">DONKI</a></li>
           <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="marte.html">Marte</a></li>
+          <li><a href="asteroides.html">NEO</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <section id="donki-section">
     <h1>Eventos Espaciais (DONKI)</h1>
-    <div id="date-filter">
+    <section id="date-filter">
       <label for="event-type">Tipo de Evento:</label>
       <select id="event-type">
         <option value="CME">Ejeção de Massa Coronal (CME)</option>
@@ -39,7 +39,7 @@
       <input type="date" id="end-date">
     
       <button onclick="carregarEventosDONKI()">Filtrar</button>
-    </div>
+    </section>
 
     <div id="donki-events-container"></div>
     <button id="show-more-button" onclick="mostrarMaisEventos()" style="display: none;">Mostrar Mais</button>
